@@ -1,0 +1,37 @@
+{
+  "name": "floatspa19",
+  "version": "0.0.1",
+  "description": "float spa 19",
+  "main": "master.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:component": "babel ./components --out-dir ./build",
+    "build:cssdev": "sass scss/master.scss css/master.min.css",
+    "build:css": "sass scss/master.scss css/master.min.css -t compressed",
+    "build:packdev": "webpack --progress",
+    "build:pack": "NODE_ENV=production webpack --progress -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariolo1985/floatspa19.git"
+  },
+  "author": "MK World Solutions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariolo1985/floatspa19/issues"
+  },
+  "homepage": "https://github.com/mariolo1985/floatspa19#readme",
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.6.1",
+    "webpack": "^3.8.1"
+  }
+}
