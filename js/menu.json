@@ -1,0 +1,16 @@
+{
+    "menu": [
+        {
+            "name": "About",
+            "section": "section-about"
+        },
+        {
+            "name": "Pricing",
+            "section": "section-pricing"
+        },
+        {
+            "name": "Book",
+            "section": "section-book"
+        }
+    ]
+}

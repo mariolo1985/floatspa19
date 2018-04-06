@@ -1,28 +1,28 @@
-var webpack = require('webpack');
+var webpack = require("webpack");
 
-module.export = {
-    entry:{
-        master:[
-            './js/master.js'
+module.exports = {
+    entry: {
+        master: [
+            "./js/master.js"
         ]
     },
-    output:{
-        path: __dirname + '/js',
-        filename:'[name].min.js'
+    output: {
+        path: __dirname + "/js",
+        filename: "[name].min.js"
     },
-    module:{
-        loader:[
+    module: {
+        rules: [
             {
-                test:/\.js$/,
-                exclude:/node_modules/,
-                loaders:'babel-loader'
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loaders: 'babel-loader'
             }
         ]
     },
-    plugins:[
+    plugins: [
         new webpack.DefinePlugin({
-            "process.env":{
-                "NODE_ENV":JSON.stringify(process.env.NODE_ENV)
+            "process.env": {
+                "NODE_ENV": JSON.stringify(process.env.NODE_ENV)
             }
         })
     ]
