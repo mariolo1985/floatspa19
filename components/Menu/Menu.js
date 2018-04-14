@@ -9,7 +9,7 @@ class Menu extends Component {
     render() {
         return (
             <div className='menu-container'>
-                <ul className='menu-list'>
+                <ul className='menu-list clear'>
                     {
                         this.props.menuList ? this.props.menuList.menu.map((item, key) => {
                             return (
@@ -18,7 +18,11 @@ class Menu extends Component {
                         })
                             : null
                     }
+                    <li className='menu-item'>
+                        <button className='btn btn-book'>Book Now</button>
+                    </li>
                 </ul>
+
             </div>
         )
     }

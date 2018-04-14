@@ -39,10 +39,19 @@ var Menu = function (_Component) {
                 { className: 'menu-container' },
                 _react2.default.createElement(
                     'ul',
-                    { className: 'menu-list' },
+                    { className: 'menu-list clear' },
                     this.props.menuList ? this.props.menuList.menu.map(function (item, key) {
                         return _react2.default.createElement(_MenuItem2.default, { key: key, name: item.name, section: item.section });
-                    }) : null
+                    }) : null,
+                    _react2.default.createElement(
+                        'li',
+                        { className: 'menu-item' },
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'btn btn-book' },
+                            'Book Now'
+                        )
+                    )
                 )
             );
         }

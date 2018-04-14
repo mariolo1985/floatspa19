@@ -1,0 +1,29 @@
+.feel-container {
+    width: 100%;
+    .feel-wrapper {
+        padding: 52px 34px;
+        width: 50%;
+        &:nth-child(1){
+            background-color: #EEEEEE;
+        }
+    }
+    .placeholder {
+        background-color: #eeeeee;
+    }
+    .feel-padder {
+        padding: 52px 34px;
+    }
+    .feel-header {
+        font-size: 23px;
+        letter-spacing: -0.2px;
+        color: #494949;
+    }
+    .feel-list {
+        margin-top: 17px;
+        .feel-item {
+            font-size: 24px;
+            font-weight: 300;
+            margin: 20px 10px;
+        }
+    }
+}
