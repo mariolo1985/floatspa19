@@ -5,12 +5,12 @@
             "section": "section-about"
         },
         {
-            "name": "Pricing",
-            "section": "section-pricing"
+            "name": "Packages",
+            "section": "section-packages"
         },
         {
-            "name": "Book",
-            "section": "section-book"
+            "name": "Contact",
+            "section": "section-contact"
         }
     ]
 }

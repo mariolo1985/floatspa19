@@ -1,9 +1,24 @@
+@import './typo.scss';
 @import './helpers.scss';
-
-body{
-    position:relative;
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
+
 // test
-.section{
+.section {
     height: 100vh;
 }
+
+@import './header.scss';
+@import './button.scss';
+@import './carousel.scss';
+@import './firsttime.scss';
+@import './explore.scss';
+@import './amenities.scss';
+@import './feel.scss';
+@import './join.scss';
+@import './package.scss';
+@import './contact.scss';
+@import './footer.scss';

@@ -40,7 +40,12 @@ var Header = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'header-wrapper' },
+                { className: 'header-wrapper clear' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'logo-container' },
+                    _react2.default.createElement('img', { className: 'header-logo', alt: 'Float Spa 19', src: './images/header_logo.png' })
+                ),
                 _react2.default.createElement(_Menu2.default, { menuList: _menu2.default })
             );
         }

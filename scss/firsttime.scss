@@ -1,0 +1,25 @@
+.first-time-container {
+    .first-time-padder {
+        padding: 36px;
+    }
+    .first-time-wrapper {
+        float: left;
+        width: 33.33%;
+    }
+    .first-time-header {
+        font-size: 24px;
+        letter-spacing: -0.2px;
+        color: #494949;
+    }
+    .first-time-divider {
+        height: 4px;
+        background: linear-gradient(to right, #273b65, #67c5b3, #273b65);
+    }
+    .first-time-content {
+        font-size: 24px;
+        letter-spacing: -0.2px;
+        font-weight: 300;
+        color: #494949;
+        margin-top: 8px;
+    }
+}
