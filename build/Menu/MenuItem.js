@@ -28,6 +28,11 @@ var MenuItem = function (_Component) {
 
         _this.menuItemClick = function (section) {
             var sections = document.getElementsByClassName(String(section));
+            sections.length > 0 ? window.scroll({
+                top: sections[0].offsetTop + 60,
+                behavior: "smooth"
+            }) : null;
+            // fix-me : Internet explorer fix
         };
 
         return _this;
@@ -51,7 +56,8 @@ var MenuItem = function (_Component) {
                     'div',
                     { className: 'menu-goto-section' },
                     name
-                )
+                ),
+                _react2.default.createElement('div', { className: 'menu-hover-id' })
             );
         }
     }]);

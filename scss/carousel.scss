@@ -1,4 +1,12 @@
 .carousel-container {
+    margin-top: 155px;
     height: 60vh;
     background: center/ cover no-repeat url('../images/carousel_bg.jpg');
+}
+
+// fix me - use global variable
+@media(max-height: 740px) {
+    .carousel-container {
+        margin-top: 100px;
+    }
 }
