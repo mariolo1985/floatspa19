@@ -1,5 +1,12 @@
-.package-padder {
-    padding: 15px 37px;
+.package-table {
+    width: 100%;
+}
+
+.package-wrapper {
+    background-color: #fdfdfd;
+    .package-padder {
+        padding: 15px 37px;
+    }
 }
 
 .package-heading {
@@ -17,6 +24,7 @@
     font-size: 24px;
     letter-spacing: -0.2px;
     color: #494949;
+    text-align: center;
 }
 
 .package-divider {

@@ -5,6 +5,9 @@
     .first-time-wrapper {
         float: left;
         width: 33.33%;
+        &:last-child{
+            text-align: center;
+        }
     }
     .first-time-header {
         font-size: 24px;

@@ -11,5 +11,9 @@ window.onload = function () {
         document.getElementById('header-container')
     );
 
+    let map = document.getElementById('map');
+    let contactWrapper = document.getElementsByClassName('contact-wrapper');
+    const cWrapperHeight = contactWrapper[0].clientHeight;
 
+    map.style.height = cWrapperHeight + 'px';
 }
