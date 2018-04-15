@@ -1,6 +1,9 @@
 .join-wrapper {
     float: left;
     width: 50%;
+    &:last-child {
+        background-color: #fdfdfd;
+    }
     .join-padder {
         padding: 23px 35px;
     }
@@ -11,20 +14,19 @@
     .join-benefit-list {
         font-size: 24px;
         font-weight: 300;
-    }
-
-    // sign up
-    .join-input-label{
-        display:block;
+    } // sign up
+    .join-input-label {
+        display: block;
         margin-bottom: 2px;
     }
-    .join-input{
+    .join-input {
+        max-width: 400px;
         width: 100%;
-        border-top:none;
-        border-left:none;
-        border-right:none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-bottom-color: #000000;
-        &.join-name{
+        &.join-name {
             margin-bottom: 42px;
         }
     }

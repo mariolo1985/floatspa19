@@ -9,7 +9,7 @@
     "build:cssdev": "sass scss/master.scss css/master.min.css",
     "build:css": "sass scss/master.scss css/master.min.css -t compressed",
     "build:packdev": "webpack --progress",
-    "build:pack": "NODE_ENV=production webpack --progress -p"
+    "build:pack": "webpack --progress -p"
   },
   "repository": {
     "type": "git",

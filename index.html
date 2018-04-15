@@ -117,7 +117,7 @@
         <div class='package-heading'>
             Package Information
         </div>
-        <table>
+        <table class='package-table'>
             <td class='package-wrapper'>
                 <div class='package-padder'>
                     <div class='package-title'>
@@ -213,7 +213,7 @@
         </div>
         <table class='contact-table'>
             <td class='contact-wrapper'>
-                <div class='map'></div>
+                <div id='map' class='map'></div>
             </td>
             <td class='contact-wrapper'>
                 <div class='contact-padder'>
@@ -237,9 +237,28 @@
     <!-- footer -->
     <div class='footer'>
         Website Designed By:
-        <a href='mkworldsolutions.com'>MK|World Solutions</a>
+        <a href='https://www.mkworldsolutions.com'>MK | World Solutions</a>
     </div>
+
     <script src='./js/master.min.js'></script>
+    <script>
+        function initMap() {
+            const uluru = { lat: 40.742743, lng: -111.888470 };
+            let map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: uluru,
+                disableDefaultUI: true,
+                zoomControl: true
+            });
+            let marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjrk1Tc94-Jt9IW_O30JfQHplCC9j5gok&callback=initMap">
+    </script>
+
 </body>
 
 </html>
