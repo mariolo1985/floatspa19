@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -10,20 +10,49 @@
 
     <link rel='stylesheet' href='./css/master.min.css' />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83145270-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-83145270-2');
-    </script>
-
 </head>
 
 <body>
-    <div id='header-container' class='header-container'></div>
+    <div id="header-container" class="header-container">
+        <div class="header-wrapper clear">
+            <div class="logo-container">
+                <a href='http://www.floatspa19.com' class='logo-link'>
+                    <img class="header-logo" alt="Float Spa 19" src="./images/header_logo.png">
+                </a>
+            </div>
+            <div id='mobile-nav' class='mobile-nav'>
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-container">
+                <ul id='menu-list' class="menu-list clear">
+                    <li class="menu-item">
+                        <a href='./floating.html' class='menu-link'>Floating</a>
+                        <div class="menu-hover-id"></div>
+                    </li>
+                    <li class="menu-item">
+                        <a href='./massage.html' class='menu-link'>Massage</a>
+                        <div class="menu-hover-id"></div>
+                    </li>
+                    <li class="menu-item">
+                        <a href='./packages.html' class='menu-link'>Packages</a>
+                        <div class="menu-hover-id"></div>
+                    </li>
+                    <li class="menu-item">
+                        <a href='./contact.html' class='menu-link'>Contact</a>
+                        <div class="menu-hover-id"></div>
+                    </li>
+                    <li class="menu-item">
+                        <button class="btn btn-book">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div id='carousel-container' class='carousel-container'></div>
     <!-- First Time -->
     <div class='first-time-container clear'>
@@ -61,7 +90,7 @@
     </div>
     <!-- Amenities-->
     <div class='amenities-container'>
-        We take your expierence seriously at Float Spa 19. Enjoy your stay here as you partake in a light snack and...
+        We take your experience seriously at Float Spa 19. Enjoy your stay here as you partake in a light snack and...
     </div>
     <!-- feel  better
     <div class='feel-container clear'>
@@ -126,136 +155,8 @@
             </div>
         </div>
     </div>
-    <!-- package-->
-    <div class='package-container section-packages'>
-        <div class='package-heading'>
-            Package Information
-        </div>
-        <table class='package-table'>
-            <tbody>
-                <tr>
-                    <td class='package-wrapper'>
-                        <div class='package-padder'>
-                            <div class='package-title'>
-                                1st Package Name
-                            </div>
-                            <div class='package-divider'></div>
-                            <ul class='package-list'>
-                                <li class='package-listitem'>
-                                    First thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    Second thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    Third thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    If there is more things
-                                </li>
-                                <li class='package-listitem'>
-                                    What else does it include?
-                                </li>
-                            </ul>
 
-                            <div class='package-book'>
-                                <button class='btn btn-book'>Book Now</button>
-                            </div>
-                        </div>
-                    </td>
-                    <td class='package-wrapper'>
-                        <div class='package-padder'>
-                            <div class='package-title'>
-                                2nd Package Name
-                            </div>
-                            <div class='package-divider'></div>
-                            <ul class='package-list'>
-                                <li class='package-listitem'>
-                                    First thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    Second thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    Third thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    If there is more things
-                                </li>
-                                <li class='package-listitem'>
-                                    What else does it include?
-                                </li>
-                            </ul>
-                            <div class='package-book'>
-                                <button class='btn btn-book'>Book Now</button>
-                            </div>
-                        </div>
-                    </td>
-                    <td class='package-wrapper'>
-                        <div class='package-padder'>
-                            <div class='package-title'>
-                                3rd Package Name
-                            </div>
-                            <div class='package-divider'></div>
-                            <ul class='package-list'>
-                                <li class='package-listitem'>
-                                    First thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    Second thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    Third thing in the package
-                                </li>
-                                <li class='package-listitem'>
-                                    If there is more things
-                                </li>
-                                <li class='package-listitem'>
-                                    What else does it include?
-                                </li>
-                            </ul>
 
-                            <div class='package-book'>
-                                <button class='btn btn-book'>Book Now</button>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <!-- Contact -->
-    <div class='contact-container section-contact'>
-        <div class='contact-heading'>
-            Contact Information
-        </div>
-        <table class='contact-table'>
-            <tbody>
-                <tr>
-                    <td class='contact-wrapper'>
-                        <div id='map' class='map'></div>
-                    </td>
-                    <td class='contact-wrapper'>
-                        <div class='contact-padder'>
-                            <div class='contact-label'>Address</div>
-                            <div class='contact-content'>
-                                <p>1212 South State Street</p>
-                                <p>Salt Lake City, UT, 84115</p>
-                            </div>
-                            <div class='contact-label'>Phone Number</div>
-                            <div class='contact-content'>
-                                (801) 906-0627
-                            </div>
-                            <div class='contact-label'>E-mail</div>
-                            <div class='contact-content'>
-                                info@floatspa19.com
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
     <!-- footer -->
     <div class='footer'>
         Website Designed By:
@@ -263,23 +164,14 @@
     </div>
 
     <script src='./js/master.min.js'></script>
+    <!-- Google Analytics -->
     <script>
-        function initMap() {
-            const uluru = { lat: 40.742743, lng: -111.888470 };
-            let map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 17,
-                center: uluru,
-                disableDefaultUI: true,
-                zoomControl: true
-            });
-            let marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-83145270-2', 'auto');
+        ga('send', 'pageview');
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjrk1Tc94-Jt9IW_O30JfQHplCC9j5gok&callback=initMap">
-    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
 
 </body>
 
