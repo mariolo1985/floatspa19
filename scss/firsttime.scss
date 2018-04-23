@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .first-time-container {
     .first-time-padder {
         padding: 36px;
@@ -5,7 +7,7 @@
     .first-time-wrapper {
         float: left;
         width: 33.33%;
-        &:last-child{
+        &:last-child {
             text-align: center;
         }
     }
@@ -24,5 +26,11 @@
         font-weight: 300;
         color: #494949;
         margin-top: 8px;
+    }
+}
+
+@media(max-width: $media-lg-mobile-width) {
+    .first-time-container .first-time-wrapper {
+        width: 100%;
     }
 }
