@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+.body-content-container {
+    margin-top: 155px;   
+}
+
+@media(max-width: $media-tablet-width) {
+    .body-content-container {
+        margin-top: 100px;
+    }
+}
