@@ -1,9 +1,11 @@
 @import './typo.scss';
 @import './helpers.scss';
+html,
 body {
     position: relative;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 // test
@@ -14,6 +16,7 @@ body {
 @import './header.scss';
 @import './button.scss';
 @import './carousel.scss';
+@import './content.scss';
 @import './firsttime.scss';
 @import './explore.scss';
 @import './amenities.scss';
