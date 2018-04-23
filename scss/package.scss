@@ -1,3 +1,4 @@
+@import './variables.scss';
 .package-table {
     width: 100%;
 }
@@ -44,4 +45,15 @@
 .package-book {
     margin-top: 86px;
     text-align: center;
+}
+
+@media(max-width:$media-lg-mobile-width) {
+    .package-wrapper {
+        float: left;
+        width: 100%;
+        margin-bottom: 40px; // fix me - get from bev
+        &:nth-child(2n) {
+            background-color: #eeeeee;
+        }
+    }
 }

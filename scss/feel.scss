@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 .feel-container {
     width: 100%;
     .feel-wrapper {
@@ -16,7 +18,7 @@
     .feel-header {
         font-size: 23px;
         letter-spacing: -0.2px;
-        color: #494949;
+        color: $color-text-default;
     }
     .feel-list {
         margin-top: 17px;

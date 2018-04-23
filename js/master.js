@@ -1,27 +1,48 @@
-import React from 'react';
-import { render } from 'react-dom';
-import Header from '../build/Header/Header';
+//import React from 'react';
+//import { render } from 'react-dom';
+//import Header from '../build/Header/Header';
 //import { About, Book, Pricing } from '../build/Sections';
 
 window.onload = function () {
-    render(
-        (
-            <Header />
-        ),
-        document.getElementById('header-container')
-    );
+    /* render(
+         (
+             <Header />
+         ),
+         document.getElementById('header-container')
+     );
+     */
 
+    // fix me - to do - set up resize
     let map = document.getElementById('map');
-    let contactWrapper = document.getElementsByClassName('contact-wrapper');
-    const cWrapperHeight = contactWrapper[0].clientHeight;
+    if (map != null) {
+        const mediaLgMobileWidth = 730;
+        const windowWidth = window.innerWidth;
+        const contactWrapper = document.getElementsByClassName('contact-wrapper');
+        const cWrapperHeight = contactWrapper[0].clientHeight;
+        windowWidth <= mediaLgMobileWidth ? map.style.height = '450px' : map.style.height = cWrapperHeight + 'px';
+    }
 
-    map.style.height = cWrapperHeight + 'px';
-
-
-    // Scroll
-    window.addEventListener('scroll', scrollThrottle, false);
     // Check if scrollbar is below header
     shouldHeaderBeMini();
+    // Scroll
+    window.addEventListener('scroll', scrollThrottle, false);
+    // mobile nav click
+    let mobileNav = document.getElementById('mobile-nav');
+    mobileNav.addEventListener('click', () => {
+        let menuList = document.getElementById('menu-list');
+        if (mobileNav.classList.contains('open')) {
+            mobileNav.classList.remove('open');
+            menuList.classList.remove('open')
+
+        } else {
+            mobileNav.classList.add('open')
+            menuList.classList.add('open');
+        }
+
+    })
+
+
+
 }
 
 // Scroll
@@ -29,6 +50,7 @@ let scrollTimeout;
 const waitTime = 50;
 
 function scrollThrottle() {
+    console.log('scroll');
     if (!scrollTimeout) {
         scrollTimeout = setTimeout(function () {
             scrollTimeout = null;
