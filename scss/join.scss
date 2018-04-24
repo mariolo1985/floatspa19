@@ -1,33 +1,68 @@
+@import './variables.scss';
+.join-container {
+    color: #F7FBFF;
+    background-color: $color-brand-main;
+}
+
 .join-wrapper {
     float: left;
     width: 50%;
-    &:last-child {
-        background-color: #fdfdfd;
-    }
     .join-padder {
         padding: 23px 35px;
     }
     .join-header {
         font-size: 24px;
         letter-spacing: -0.2px;
+        &:nth-child(2) {
+            margin-top: 15px;
+        }
     }
     .join-benefit-list {
+        margin-top: 0;
         font-size: 24px;
         font-weight: 300;
     } // sign up
     .join-input-label {
         display: block;
+        font-size: 12px;
+        line-height: 1.33;
         margin-bottom: 2px;
     }
     .join-input {
+        font-size: 16px;
+        line-height: 1.5;
         max-width: 400px;
         width: 100%;
+        color: #F7FBFF;
+        background-color: $color-brand-main;
         border-top: none;
         border-left: none;
         border-right: none;
-        border-bottom-color: #000000;
-        &.join-name {
-            margin-bottom: 42px;
+        border-bottom-color: rgba(247, 251, 255, .42);
+        &::placeholder {
+            color: #F7FBFF;
         }
+        &:focus {
+            outline: none;
+        }
+        &.join-name {
+            margin-bottom: 43px;
+        }
+    }
+}
+
+.join-btn-container {
+    margin-top: 37px;
+    >* {
+        float: left;
+        width: 50%;
+    }
+    .join-btn-info {
+        font-size: 16px;
+        letter-spacing: -.1px;
+        color: #F7FBFF;
+    }
+    .join-btn-wrapper {
+        text-align: right;
     }
 }
