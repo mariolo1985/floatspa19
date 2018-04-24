@@ -1,0 +1,46 @@
+@import './colors.scss';
+@import './variables.scss';
+.services-header-container {
+    background-color: #39819A;
+}
+
+.services-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 74px;
+    line-height: 74px;
+    .services-menu-item {
+        float: left;
+        width: 25%;
+        text-align: center;
+        a {
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            text-decoration: none;
+            color: #F7FBFF;
+            &:hover {
+                color: #F7FBFF;
+            }
+            .services-hover-id {
+                position: absolute;
+                bottom: 15px;
+                width: 100%;
+                opacity: 0;
+                height: 2px;
+                background-color: #284670;
+            }
+        }
+        &.selected * {
+            cursor: default;
+        }
+        &.selected,
+        &:hover {
+            a .services-hover-id {
+                opacity: 1;
+                transition: .5s;
+            }
+        }
+    }
+}
