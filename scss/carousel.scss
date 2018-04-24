@@ -1,9 +1,33 @@
+@import './colors.scss';
 @import './variables.scss';
-
 .carousel-container {
+    position: relative;
     margin-top: 155px;
-    height: 60vh;
-    background: center/ cover no-repeat url('../images/carousel_bg.jpg');
+    height: 70%;
+    background: 0 40%/ cover no-repeat url('../images/carousel_bg.jpg');
+    .carousel-fade {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        opacity: .6;
+    }
+    .carousel-tagline {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        text-align: center;
+        font-size: 48px;
+        letter-spacing: -0.4px;
+        color: $color-brand-main;
+    }
+    .carousel-btn-wrapper {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 10%;
+       
+    }
 }
 
 @media(max-width: $media-tablet-width) {

@@ -1,19 +1,74 @@
+@import './colors.scss';
+@import './variables.scss';
+// fix me - to do - hover states;
 .btn {
     font-weight: 500;
-    padding: 0 14px;
-    height: 39px;
+    color: $color-white;
     border: none;
     cursor: pointer;
 }
 
-.btn-book {
-    font-size: 20px;
-    color: #FFFFFF;
-    background-color: #266c95;
-    &.btn-lg {
-        height: 121px;
-        font-size: 48px;
-        font-weight: 300;
-        padding: 32px 37px 32px 37px;
+// menu book button
+.menu-item {
+    .btn-book {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: .9px;
+        color: $color-text-link;
+        height: 52px;
+        border-radius: 52px;
+        margin-top: -10px;
+        padding: 0 28px;
+        background-color: $color-brand-main;
+        border: 3px solid #3C8FA6;
+        box-shadow: 0 1px 4px 0 rgba(36, 36, 37, .54);
+    }
+}
+
+@media(max-width: $media-lg-mobile-width) {
+    .menu-item .btn-book {
+        margin-top: 0;
+    }
+}
+
+// carousel btn
+.carousel-btn-wrapper {
+    .btn-carousel {
+        font-size: 24px;
+        font-weight: 600;
+        color: #F7FBFF;
+        height: 70px;
+        padding: 0 56px;
+        border-radius: 26px;
+        box-shadow: 0 1px 4px 0 rgba(36, 36, 37, .54);
+        background-color: #3C8FA6;
+        border: 3px solid #3C8FA6;
+    }
+}
+
+// join btn
+.join-btn-wrapper {
+    .btn-join {
+        font-size: 24px;
+        letter-spacing: .9px;
+        color: #FFFFFF;
+        height: 52px;
+        padding: 0 28px;
+        background-color: #3C8FA6;
+    }
+}
+
+// packages btn book
+.package-book {
+    .btn-book {
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #FFFFFF;
+        padding: 0 14px;
     }
 }

@@ -1,13 +1,14 @@
+@import './colors.scss';
 @import './variables.scss';
 .contact-heading {
-    height: 194px;
-    line-height: 194px;
+    height: 149px;
+    line-height: 149px;
     padding: 58px;
     color: #FFFFFF;
     font-size: 36px;
     font-weight: 300;
     letter-spacing: -0.3px;
-    background-color: #094B7D;
+    background-color: $color-brand-main;
 }
 
 .contact-table {
@@ -21,20 +22,36 @@
     .contact-label {
         font-size: 24px;
         letter-spacing: -0.2px;
-        margin-bottom: 15px;
+        color: #0E1827;
+        margin-bottom: 8px;
     }
     .contact-content {
         font-size: 24px;
-        font-weight: 300;
         letter-spacing: -0.2px;
-        margin-bottom: 24px;
+        color: $color-brand-main;
+        margin-bottom: 20px;
         p {
             margin: 0;
+        }
+        >span {
+            float: left;
+            width: 50%;
+        } // social links
+        .social-link {
+            text-decoration: none;
+            svg {
+                width: 48px;
+            }
         }
     }
 }
 
 @media(max-width: $media-lg-mobile-width) {
+    .contact-heading {
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+    }
     .contact-table .contact-wrapper {
         float: left;
         width: 100%;

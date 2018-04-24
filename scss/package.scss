@@ -1,3 +1,4 @@
+@import './colors.scss';
 @import './variables.scss';
 .package-table {
     width: 100%;
@@ -8,17 +9,6 @@
     .package-padder {
         padding: 15px 37px;
     }
-}
-
-.package-heading {
-    height: 242px;
-    line-height: 242px;
-    padding: 58px;
-    color: #FFFFFF;
-    font-size: 36px;
-    font-weight: 300;
-    letter-spacing: -0.3px;
-    background-color: #094B7D;
 }
 
 .package-title {

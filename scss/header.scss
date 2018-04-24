@@ -6,11 +6,11 @@
     left: 0;
     height: $headerHeight;
     width: 100%;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.5);
+    background-color: $color-brand-main;
     z-index: 100;
     transition: height $fullTransitionSpeed;
     &.mini {
+        // <= lg mobile
         height: $headerMiniHeight;
         transition: height $miniTransitionSpeed;
         .logo-container .header-logo {
@@ -38,11 +38,6 @@
     }
 }
 
-// Menu
-.menu-container {
-    float: right;
-}
-
 // hamburger
 .header-container {
     .mobile-nav {
@@ -68,7 +63,7 @@
                 position: absolute;
                 height: 5px;
                 width: 100%;
-                background: $color-brand-1;
+                background: $color-white;
                 border-radius: 9px;
                 opacity: 1;
                 left: 0;
@@ -121,6 +116,11 @@
     }
 }
 
+// Menu
+.menu-container {
+    float: right;
+}
+
 .menu-list {
     padding: 0 32px;
     margin: 58px 0 0 0;
@@ -137,21 +137,19 @@
             font-size: 24px;
             letter-spacing: -0.2px;
             font-weight: 300;
-            color: $color-text-default;
+            color: $color-text-link;
             text-decoration: none;
         }
         .menu-hover-id {
             height: 4px;
             margin-top: 2px;
-            background: linear-gradient(to right, #273b65, #67c5b3, #273b65);
+            background-color: $color-hover-id;
             opacity: 0;
         }
-        &.selected .menu-hover-id {
-            height: 4px;
-            margin-top: 2px;
-            background: linear-gradient(to right, #273b65, #67c5b3, #273b65);
-            opacity: 1;
+        &.selected * {
+            cursor: default;
         }
+        &.selected,
         &:hover {
             .menu-hover-id {
                 opacity: 1;
@@ -185,7 +183,7 @@
         .menu-list {
             margin: 0;
             padding: 0;
-            background-color: #FFFFFF;
+            background-color: $color-brand-main;
             max-height: 0;
             transition: max-height 1s;
             .menu-item {

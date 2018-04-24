@@ -13,13 +13,15 @@ window.onload = function () {
      */
 
     // fix me - to do - set up resize
+    const lgMobileWidth = 670;
+    const lgMobileContentHeight = 760;
     let map = document.getElementById('map');
     if (map != null) {
-        const mediaLgMobileWidth = 730;
+        const mediaLgMobileWidth = lgMobileWidth;
         const windowWidth = window.innerWidth;
         const contactWrapper = document.getElementsByClassName('contact-wrapper');
         const cWrapperHeight = contactWrapper[0].clientHeight;
-        windowWidth <= mediaLgMobileWidth ? map.style.height = '450px' : map.style.height = cWrapperHeight + 'px';
+        windowWidth <= mediaLgMobileWidth ? map.style.height = `${lgMobileContentHeight}px` : map.style.height = cWrapperHeight + 'px';
     }
 
     // Check if scrollbar is below header
