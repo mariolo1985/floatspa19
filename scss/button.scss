@@ -2,22 +2,26 @@
 @import './variables.scss';
 // fix me - to do - hover states;
 .btn {
+    display: inline-block;
     font-weight: 500;
     color: $color-white;
     border: none;
+    text-decoration: none;
     cursor: pointer;
 }
 
 // menu book button
+$btn-book-height: 48px;
 .menu-item {
     .btn-book {
         font-size: 24px;
         font-weight: 600;
         letter-spacing: .9px;
         color: $color-text-link;
-        height: 52px;
-        border-radius: 52px;
-        margin-top: -10px;
+        height: $btn-book-height;
+        line-height: $btn-book-height;
+        border-radius: $btn-book-height;
+        margin-top: -12px;
         padding: 0 28px;
         background-color: $color-brand-main;
         border: 3px solid #3C8FA6;
@@ -68,7 +72,22 @@
         line-height: 52px;
         border-radius: 5px;
         border: 2px solid $color-btn-border;
-        background-color: #FFFFFF;
+        background-color: #F7FBFF;
+        padding: 0 14px;
+    }
+}
+
+// hydro btn book
+.hydro-cost-btn-wrapper {
+    .btn-book {
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #F7FBFF;
         padding: 0 14px;
     }
 }
