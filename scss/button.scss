@@ -91,3 +91,46 @@ $btn-book-height: 48px;
         padding: 0 14px;
     }
 }
+
+.book-benefit-btn-wrapper {
+    .btn-book {
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #F7FBFF;
+        padding: 0 14px;
+    }
+}
+
+.service-cost-book-wrapper {
+    .btn-book {
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #F7FBFF;
+        padding: 0 14px;
+    }
+}
+
+.services-addon-btn-wrapper {
+    .btn-book {
+        display:none;
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #F7FBFF;
+        padding: 0 14px;
+    }
+}

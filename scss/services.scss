@@ -4,6 +4,7 @@
     background-color: $color-services-bg;
 }
 
+// menu
 .services-menu {
     margin: 0;
     padding: 0;
@@ -45,6 +46,218 @@
     }
 }
 
+// services general
+.services-content-container {
+    .services-header {
+        height: 288px;
+    }
+    .services-header-title {
+        font-size: 20px;
+        text-align: center;
+        color: $color-hydro-header-text;
+        letter-spacing: -0.2px;
+        height: 74px;
+        line-height: 74px;
+        border: 1px solid $color-brand-main;
+    }
+    .services-header-info {
+        font-size: 14px;
+        color: $color-brand-main;
+        letter-spacing: -0.1px;
+        line-height: 1.5em;
+        padding: 25px;
+    }
+}
+
+// How it works
+.services-howitworks-wrapper {
+    background-color: #284670;
+    .services-howitworks-heading {
+        text-align: center;
+        height: 74px;
+        line-height: 74px;
+        font-size: 20px;
+        letter-spacing: -0.2px;
+        color: #f7fbff;
+    }
+    .services-howitworks-info {
+        padding: 25px;
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        color: #F7FBFF;
+    }
+}
+
+// services benefits
+.services-benefits-container {
+    .services-benefits-table {
+        width: 100%;
+    }
+    .services-benefits {
+        width: 50%;
+    } // benefit list
+    .services-benefits-header {
+        font-size: 18px;
+        letter-spacing: -0.2px;
+        color: #f7fbff;
+        height: 74px;
+        line-height: 74px;
+        background-color: $color-services-benefit-bg;
+        text-align: center;
+    }
+    .services-benefits-list {
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        line-height: 1.93;
+        color: $color-brand-main;
+        &.content {
+            padding: 15px;
+        }
+    }
+}
+
+.services-benefits-list {
+    .services-cost-wrapper {
+        float: left;
+        width: 50%;
+    }
+}
+
+.services-cost-wrapper {
+    .services-cost-text {
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        color: #284670;
+        text-align: center;
+    }
+}
+
+.book-benefit-text {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    color: #284670;
+}
+
+.book-benefit-btn-wrapper {
+    margin-top: 73px;
+    text-align: center;
+}
+
+// benefit table images
+.services-benefits {
+    &.hydro-chair-img {
+        background: center/cover no-repeat url('../images/hydro_chair.png');
+    }
+}
+
+// services header img
+.hydromassage-header {
+    background: center/cover no-repeat url('../images/hydro_header.jpg');
+}
+
+.floating-header {
+    background: center/cover no-repeat url('../images/floating_header.jpg');
+}
+
+.massage-header {
+    background: center/cover no-repeat url('../images/massage_header.jpg');
+}
+
+.services-benefits {
+    &.float-benefit-img-1 {
+        background: center/cover no-repeat url('../images/float_benefit_img_1.jpg');
+    }
+    &.float-benefit-img-2 {
+        background: center/cover no-repeat url('../images/carousel_bg.jpg');
+    }
+    &.float-benefit-img-3 {
+        background: center/cover no-repeat url('../images/float_benefit_img_3.jpg');
+    }
+}
+
+// massages
+// cost alignment
+.services-benefits {
+    &.massage-img-1 {
+        background: center/cover no-repeat url('../images/massage_img_1.jpg');
+    }
+    &.massage-img-2 {
+        background: center/cover no-repeat url('../images/massage_img_2.jpg');
+    }
+    &.massage-img-3 {
+        background: center/cover no-repeat url('../images/massage_img_3.jpg');
+    }
+    &.massage-img-4 {
+        background: center/cover no-repeat url('../images/massage_img_4.jpg');
+    }
+    &.massage-img-5 {
+        background: center/cover no-repeat url('../images/massage_img_5.jpg');
+    }
+    &.massage-img-6 {
+        background: center/cover no-repeat url('../images/massage_img_6.jpg');
+    }
+    &.massage-img-7 {
+        background: center/cover no-repeat url('../images/massage_img_7.jpg');
+    }
+    &.massage-img-8 {
+        background: center/cover no-repeat url('../images/massage_img_8.jpg');
+    }
+}
+
+.service-cost-item {
+    float: left;
+    width: 100%;
+    text-align: center;
+    &.w1-3 {
+        width: 33.33%;
+    }
+    &.w1-2 {
+        width: 50%;
+    }
+}
+
+// cost padding
+.service-cost-book-wrapper {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 48px 0 41px 0;
+}
+
+.service-cost-item {
+    background-color: #39819a;
+    .service-cost-item-padder {
+        border: 1px solid #F7FBFF;
+    }
+    .service-duration {
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        color: #f7fbff;
+        padding-top: 12px;
+    }
+    .service-cost {
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        color: #f7fbff;
+        padding: 12px 0;
+    }
+}
+
+.services-addon-text {
+    height: 75px;
+    line-height: 75px;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    color: #284670;
+    padding-left: 40px;
+}
+
+.services-addon-btn-wrapper {
+    text-align: right;
+    padding-right: 40px;
+}
+
 @media(max-width: $media-tablet-width) {
     .services-menu {
         .services-menu-item {
@@ -61,6 +274,13 @@
             a {
                 font-size: 16px;
             }
+        }
+    }
+    .services-benefits-container{
+        .services-benefits{
+            float:left;
+            min-height: 350px;
+            width: 100%;
         }
     }
 }
