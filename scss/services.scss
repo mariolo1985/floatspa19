@@ -1,7 +1,7 @@
 @import './colors.scss';
 @import './variables.scss';
 .services-header-container {
-    background-color: #39819A;
+    background-color: $color-services-bg;
 }
 
 .services-menu {
@@ -40,6 +40,36 @@
             a .services-hover-id {
                 opacity: 1;
                 transition: .5s;
+            }
+        }
+    }
+}
+
+@media(max-width: $media-tablet-width) {
+    .services-menu {
+        .services-menu-item {
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: $media-lg-mobile-width) {
+    .services-menu {
+        .services-menu-item {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width: $media-sm-mobile-width) {
+    .services-menu {
+        .services-menu-item {
+            a {
+                font-size: 10px;
             }
         }
     }
