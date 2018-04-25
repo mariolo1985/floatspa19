@@ -1,49 +1,108 @@
 @import './colors.scss';
 @import './variables.scss';
-.package-table {
-    width: 100%;
-}
-
+// package item
 .package-wrapper {
-    background-color: #fdfdfd;
+    float: left;
+    width: 50%; //min-height: 785px;
     .package-padder {
-        padding: 15px 37px;
+        position: relative;
+        margin: 15px 80px;
+        min-height: 785px;
+        border: 1px solid $color-services-border;
     }
 }
 
+// heading
 .package-title {
+    position: relative;
     font-size: 24px;
     letter-spacing: -0.2px;
-    color: #494949;
+    color: $color-brand-main;
+    text-align: center;
+    height: 178px;
+    &.title-1 {
+        background: center/cover no-repeat url('../images/package_bg_1.jpg');
+    }
+    &.title-2 {
+        background: center/cover no-repeat url('../images/package_bg_2.jpg');
+    }
+    .title-fader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        opacity: .4;
+        height: 100%;
+        width: 100%;
+    }
+    .title-text {
+        position: relative;
+        padding-top: 71px;
+        z-index: 10;
+    }
+}
+
+// package info
+.package-cost-wrapper {
+    font-size: 14px;
+    color: $color-brand-main;
+    letter-spacing: -.1px;
+    margin: 19px 0 16px 0;
     text-align: center;
 }
 
 .package-divider {
-    height: 4px;
-    background: linear-gradient(to right, #273b65, #67c5b3, #273b65);
+    text-align: center;
+    img {
+        width: 230px;
+    }
 }
 
 .package-list {
-    font-size: 24px;
-    font-weight: 300;
-    letter-spacing: -0.2px;
+    margin-top: 48px;
+    padding-left: 20px;
     .package-listitem {
-        margin: 20px 10px;
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        line-height: 3.21;
+        color: $color-brand-main; //margin: 20px 10px;
     }
 }
 
 .package-book {
-    margin-top: 86px;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
     text-align: center;
+}
+
+@media(max-width:$media-tablet-width) {
+    .package-wrapper {
+        .package-padder {
+            margin: 15px 30px;
+        }
+    }
 }
 
 @media(max-width:$media-lg-mobile-width) {
     .package-wrapper {
-        float: left;
         width: 100%;
-        margin-bottom: 40px; // fix me - get from bev
-        &:nth-child(2n) {
-            background-color: #eeeeee;
+        margin-bottom: 40px;
+        .package-padder {
+            margin: 15px 80px;
+        }
+    }
+}
+
+@media(max-width:$media-sm-mobile-width) {
+    .package-wrapper {
+        .package-padder {
+            margin: 15px 30px;
+        }
+    }
+    .package-divider {
+        img {
+            width: 175px;
         }
     }
 }
