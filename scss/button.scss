@@ -38,10 +38,12 @@ $btn-book-height: 48px;
 // carousel btn
 .carousel-btn-wrapper {
     .btn-carousel {
+        display:inline-block;
         font-size: 24px;
         font-weight: 600;
         color: #F7FBFF;
         height: 70px;
+        line-height: 70px;
         padding: 0 56px;
         border-radius: 26px;
         box-shadow: 0 1px 4px 0 rgba(36, 36, 37, .54);
@@ -80,6 +82,49 @@ $btn-book-height: 48px;
 // hydro btn book
 .hydro-cost-btn-wrapper {
     .btn-book {
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #F7FBFF;
+        padding: 0 14px;
+    }
+}
+
+.book-benefit-btn-wrapper {
+    .btn-book {
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #F7FBFF;
+        padding: 0 14px;
+    }
+}
+
+.service-cost-book-wrapper {
+    .btn-book {
+        font-size: 20px;
+        letter-spacing: .7px;
+        color: $color-btn-bg;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 5px;
+        border: 2px solid $color-btn-border;
+        background-color: #F7FBFF;
+        padding: 0 14px;
+    }
+}
+
+.services-addon-btn-wrapper {
+    .btn-book {
+        display:none;
         font-size: 20px;
         letter-spacing: .7px;
         color: $color-btn-bg;

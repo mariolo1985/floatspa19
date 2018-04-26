@@ -1,55 +1,7 @@
 @import './colors.scss';
 @import './variables.scss';
-.hydro-header-container {
-    .hydro-header {
-        img {
-            width: 100%;
-        }
-    }
-    .hydro-header-title {
-        font-size: 20px;
-        text-align: center;
-        color: $color-hydro-header-text;
-        letter-spacing: -0.2px;
-        height: 74px;
-        line-height: 74px;
-        border: 1px solid $color-brand-main;
-    }
-    .hydro-header-info {
-        font-size: 14px;
-        color: $color-brand-main;
-        letter-spacing: -0.1px;
-        line-height: 1.5em;
-        padding: 25px;
-    }
-}
 
-.hydro-benefits-container {
-    .hydro-benefits-table {
-        width: 100%;
-    }
-    .hydro-benefits {
-        width: 50%;
-    }
-    .hydro-chair-img {
-        background: center/cover no-repeat url('../images/hydro_chair.png');
-    } // benefit list
-    .hydro-benefits-header {
-        font-size: 18px;
-        letter-spacing: -0.2px;
-        color: #f7fbff;
-        height: 74px;
-        line-height: 74px;
-        background-color: $color-hydro-benefit-bg;
-        text-align: center;
-    }
-    .hydro-benefits-list {
-        font-size: 14px;
-        letter-spacing: -0.1px;
-        line-height: 1.93;
-        color: $color-brand-main;
-    }
-}
+
 
 .hydro-cost-container {
     .hydro-cost-tagline {
