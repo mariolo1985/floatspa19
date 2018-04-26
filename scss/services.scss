@@ -48,6 +48,10 @@
 
 // services general
 .services-content-container {
+    .services-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .services-header {
         height: 288px;
     }
@@ -276,9 +280,9 @@
             }
         }
     }
-    .services-benefits-container{
-        .services-benefits{
-            float:left;
+    .services-benefits-container {
+        .services-benefits {
+            float: left;
             min-height: 350px;
             width: 100%;
         }
