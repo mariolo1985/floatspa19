@@ -53,6 +53,7 @@
 
 .join-btn-container {
     margin-top: 37px;
+    max-width: 400px;
     >* {
         float: left;
         width: 50%;
@@ -64,5 +65,17 @@
     }
     .join-btn-wrapper {
         text-align: right;
+    }
+}
+
+@media(max-width: $media-lg-mobile-width) {
+    .join-wrapper {
+        width: 100%;
+        .join-input {
+            max-width: 100%;
+        }
+    }
+    .join-btn-container {
+        max-width: 100%;
     }
 }
