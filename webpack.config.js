@@ -6,13 +6,18 @@ module.exports = {
     entry: {
         master: [
             "./js/master.js"
+        ],
+        floatingservices: [
+            "./js/floatingservices.js"
+        ],
+        massageservices: [
+            "./js/massageservices.js"
         ]
     },
     output: {
         path: __dirname + "/js",
         filename: "[name].min.js"
     },
-    externals: nodeExternals(),
     module: {
         rules: [
             {
@@ -21,12 +26,5 @@ module.exports = {
                 loaders: 'babel-loader'
             }
         ]
-    },
-    plugins: [
-        new webpack.DefinePlugin({
-            "process.env": {
-                "NODE_ENV": 'production'
-            }
-        })
-    ]
+    }
 };
