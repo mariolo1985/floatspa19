@@ -120,6 +120,15 @@
     }
 }
 
+.services-benefits-table {
+    .service-row:nth-child(2n) {
+        .services-benefits-header,
+        .service-cost-item {
+            background-color: #284670;
+        }
+    }
+}
+
 .services-benefits-list {
     .services-cost-wrapper {
         float: left;
@@ -137,6 +146,8 @@
 }
 
 .book-benefit-text {
+    position: relative;
+    z-index: 1;
     text-align: center;
     font-size: 18px;
     letter-spacing: -0.2px;
@@ -144,6 +155,8 @@
 }
 
 .book-benefit-btn-wrapper {
+    position: relative;
+    z-index: 1;
     margin-top: 73px;
     text-align: center;
 }
@@ -169,6 +182,15 @@
 }
 
 .services-benefits {
+    .title-fader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        opacity: .6;
+        height: 100%;
+        width: 100%;
+    }
     &.float-benefit-img-1 {
         background: center/cover no-repeat url('../images/float_benefit_img_1.jpg');
     }
@@ -176,6 +198,7 @@
         background: center/cover no-repeat url('../images/carousel_bg.jpg');
     }
     &.float-benefit-img-3 {
+        position: relative;
         background: center/cover no-repeat url('../images/float_benefit_img_3.jpg');
     }
 }
@@ -285,7 +308,13 @@
             float: left;
             min-height: 350px;
             width: 100%;
+            &.addon {
+                min-height: auto;
+            }
         }
+    }
+    .book-benefit-text {
+        margin-top: 80px;
     }
 }
 
