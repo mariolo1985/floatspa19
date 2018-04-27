@@ -1,17 +1,5 @@
-//import React from 'react';
-//import { render } from 'react-dom';
-//import Header from '../build/Header/Header';
-//import { About, Book, Pricing } from '../build/Sections';
 
 window.onload = function () {
-    /* render(
-         (
-             <Header />
-         ),
-         document.getElementById('header-container')
-     );
-     */
-
     // fix me - to do - set up resize
     const lgMobileWidth = 670;
     const lgMobileContentHeight = 760;
@@ -43,8 +31,6 @@ window.onload = function () {
 
     })
 
-
-
 }
 
 // Scroll
@@ -52,7 +38,6 @@ let scrollTimeout;
 const waitTime = 50;
 
 function scrollThrottle() {
-    console.log('scroll');
     if (!scrollTimeout) {
         scrollTimeout = setTimeout(function () {
             scrollTimeout = null;
