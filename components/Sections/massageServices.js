@@ -234,20 +234,20 @@ class massageServices extends Component {
                     <tr className='service-row'>
                         <td className='services-benefits massage-service'>
                             <div className='services-benefits-header'>
-                                Couple Massage
+                                Couple&#8217;s Massage
                         </div>
                             <div className='services-benefits-list-wrapper clear'>
 
                                 <div className='service-cost-item w1-2'>
                                     <div className='service-cost-item-padder'>
                                         <div className='service-duration'>60 Min</div>
-                                        <div className='service-cost'>$138</div>
+                                        <div className='service-cost'>$158</div>
                                     </div>
                                 </div>
                                 <div className='service-cost-item w1-2'>
                                     <div className='service-cost-item-padder'>
                                         <div className='service-duration'>90 Min</div>
-                                        <div className='service-cost'>$218</div>
+                                        <div className='service-cost'>$238</div>
                                     </div>
                                 </div>
                                 <div className='service-cost-book-wrapper'>
