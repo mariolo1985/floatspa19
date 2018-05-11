@@ -20,15 +20,14 @@ window.onload = function () {
     let mobileNav = document.getElementById('mobile-nav');
     mobileNav.addEventListener('click', () => {
         let menuList = document.getElementById('menu-list');
+
         if (mobileNav.classList.contains('open')) {
-            mobileNav.classList.remove('open');
             menuList.classList.remove('open')
-
+            mobileNav.classList.remove('open');
         } else {
-            mobileNav.classList.add('open')
             menuList.classList.add('open');
+            mobileNav.classList.add('open')
         }
-
     })
 
 }
