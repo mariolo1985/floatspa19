@@ -500,7 +500,7 @@ var massageServices = function (_Component) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'services-benefits-header' },
-                                'Couple Massage'
+                                'Couple\u2019s Massage'
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -519,7 +519,7 @@ var massageServices = function (_Component) {
                                         _react2.default.createElement(
                                             'div',
                                             { className: 'service-cost' },
-                                            '$138'
+                                            '$158'
                                         )
                                     )
                                 ),
@@ -537,7 +537,7 @@ var massageServices = function (_Component) {
                                         _react2.default.createElement(
                                             'div',
                                             { className: 'service-cost' },
-                                            '$218'
+                                            '$238'
                                         )
                                     )
                                 ),
