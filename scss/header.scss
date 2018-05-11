@@ -202,7 +202,8 @@
             }
             .btn-book {
                 height: 0;
-                opacity: 0; //transition: opacity .1s;
+                opacity: 0; 
+                font-size:0px;
             }
             &.open {
                 max-height: 500px;
@@ -220,7 +221,9 @@
                     transition: opacity 1s;
                 }
                 .btn-book {
+                    font-size: 24px;
                     height: 39px;
+                    line-height: 39px;
                     opacity: 1;
                     transition: opacity 1s;
                 }
@@ -228,6 +231,6 @@
         }
     }
     .menu-container {
-        float: none;
+        float: none;     
     }
 }
