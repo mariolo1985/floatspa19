@@ -10,7 +10,7 @@
     "build:packdev": "webpack --progress",
     "build:pack": "webpack --progress -p",
     "build:dev":"yarn build:cssdev && yarn build:packdev",
-    "build":"yarn build:css && yarn build:pack"
+    "build":"yarn build:css && yarn build:component && yarn build:pack"
   },
   "repository": {
     "type": "git",

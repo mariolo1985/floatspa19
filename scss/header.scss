@@ -185,7 +185,7 @@
             padding: 0;
             background-color: $color-brand-main;
             max-height: 0;
-            transition: max-height 1s;
+            transition: max-height .5s;
             .menu-item {
                 max-height: 0;
                 width: 100%;
@@ -202,12 +202,13 @@
             }
             .btn-book {
                 height: 0;
-                opacity: 0; //transition: opacity .1s;
+                opacity: 0; 
+                font-size:0px;
             }
             &.open {
                 max-height: 500px;
                 padding: 29px;
-                transition: max-height 1s;
+                transition: max-height .5s;
                 .menu-item {
                     max-height: 50px;
                 }
@@ -217,17 +218,19 @@
                     margin: 10px 0;
                     font-size: 20px;
                     opacity: 1;
-                    transition: opacity 1s;
+                    transition: opacity .5s;
                 }
                 .btn-book {
+                    font-size: 24px;
                     height: 39px;
+                    line-height: 39px;
                     opacity: 1;
-                    transition: opacity 1s;
+                    transition: opacity .5s;
                 }
             }
         }
     }
     .menu-container {
-        float: none;
+        float: none;     
     }
 }
